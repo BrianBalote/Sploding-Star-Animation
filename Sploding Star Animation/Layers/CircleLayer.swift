@@ -10,7 +10,7 @@ import UIKit
 
 class CircleLayer: CAShapeLayer {
     
-    let animationDuration: CFTimeInterval = 0.3
+    let animationDuration: CFTimeInterval = 0.1
     let center = CGPoint(x: UIScreen.main.bounds.size.width / 2.0, y: UIScreen.main.bounds.size.height / 2.0)
     
     override init() {
@@ -28,7 +28,7 @@ class CircleLayer: CAShapeLayer {
     }
     
     var ovalPathLarge: UIBezierPath {
-        let size = CGFloat(90.0)
+        let size = CGFloat(120.0)
         return UIBezierPath(ovalIn: CGRect(x: center.x - CGFloat(size/2.0), y: center.y - CGFloat(size/2.0), width: size, height: size))
     }
     

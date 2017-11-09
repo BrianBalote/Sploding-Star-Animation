@@ -20,6 +20,7 @@
 		23C9101F1FB4971000EBE790 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C9101E1FB4971000EBE790 /* Constants.swift */; };
 		23C910211FB4987100EBE790 /* ShapeLayersUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910201FB4987100EBE790 /* ShapeLayersUtil.swift */; };
 		23C910231FB4994000EBE790 /* ParticlesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910221FB4994000EBE790 /* ParticlesUtil.swift */; };
+		23C910251FB4CAED00EBE790 /* ParticleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910241FB4CAED00EBE790 /* ParticleLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		23C9101E1FB4971000EBE790 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23C910201FB4987100EBE790 /* ShapeLayersUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLayersUtil.swift; sourceTree = "<group>"; };
 		23C910221FB4994000EBE790 /* ParticlesUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesUtil.swift; sourceTree = "<group>"; };
+		23C910241FB4CAED00EBE790 /* ParticleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				23C910161FB48BBB00EBE790 /* CircleLayer.swift */,
 				23C910181FB48BEC00EBE790 /* StarLayer.swift */,
+				23C910241FB4CAED00EBE790 /* ParticleLayer.swift */,
 			);
 			path = Layers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				23C90FE81FB411FB00EBE790 /* AppDelegate.swift in Sources */,
 				23C910211FB4987100EBE790 /* ShapeLayersUtil.swift in Sources */,
 				23C9101C1FB496C700EBE790 /* DrawingUtil.swift in Sources */,
+				23C910251FB4CAED00EBE790 /* ParticleLayer.swift in Sources */,
 				23C9101F1FB4971000EBE790 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

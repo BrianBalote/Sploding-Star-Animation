@@ -10,8 +10,7 @@ import UIKit
 
 class StarLayer: CAShapeLayer {
     
-    let animationDuration: CFTimeInterval = 1
-    let center = CGPoint(x: UIScreen.main.bounds.size.width / 2.0, y: UIScreen.main.bounds.size.height / 2.0)
+    let animationDuration: CFTimeInterval = 0.3
     
     override init() {
         super.init()
