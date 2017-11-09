@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,15 +19,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWV-5T-EmO">
-                                <rect key="frame" x="89" y="502" width="197" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avg-ZS-WR7">
+                                <rect key="frame" x="119" y="32" width="137" height="30"/>
+                                <state key="normal" title="Use Core Animation"/>
+                                <connections>
+                                    <action selector="useCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Zk-Pk-hLG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-w2-Npk">
+                                <rect key="frame" x="132" y="580" width="111" height="30"/>
+                                <state key="normal" title="Use Layer Delay"/>
+                                <connections>
+                                    <action selector="userLayerDelay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOc-rE-x7g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="avg-ZS-WR7" secondAttribute="trailing" constant="103" id="8xh-zP-22W"/>
+                            <constraint firstItem="XXA-w2-Npk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="116" id="ATh-m9-6g0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XXA-w2-Npk" secondAttribute="trailing" constant="116" id="Iqs-12-pOG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XXA-w2-Npk" secondAttribute="bottom" constant="57" id="toW-rn-5di"/>
+                            <constraint firstItem="avg-ZS-WR7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="ufj-rH-iYg"/>
+                            <constraint firstItem="avg-ZS-WR7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="y5V-yF-Rix"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

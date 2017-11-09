@@ -14,6 +14,12 @@
 		23C90FF21FB411FB00EBE790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C90FF01FB411FB00EBE790 /* LaunchScreen.storyboard */; };
 		23C90FFD1FB411FB00EBE790 /* Sploding_Star_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C90FFC1FB411FB00EBE790 /* Sploding_Star_AnimationTests.swift */; };
 		23C910081FB411FB00EBE790 /* Sploding_Star_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910071FB411FB00EBE790 /* Sploding_Star_AnimationUITests.swift */; };
+		23C910171FB48BBB00EBE790 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910161FB48BBB00EBE790 /* CircleLayer.swift */; };
+		23C910191FB48BEC00EBE790 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910181FB48BEC00EBE790 /* StarLayer.swift */; };
+		23C9101C1FB496C700EBE790 /* DrawingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C9101B1FB496C700EBE790 /* DrawingUtil.swift */; };
+		23C9101F1FB4971000EBE790 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C9101E1FB4971000EBE790 /* Constants.swift */; };
+		23C910211FB4987100EBE790 /* ShapeLayersUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910201FB4987100EBE790 /* ShapeLayersUtil.swift */; };
+		23C910231FB4994000EBE790 /* ParticlesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C910221FB4994000EBE790 /* ParticlesUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		23C910031FB411FB00EBE790 /* Sploding Star AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sploding Star AnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C910071FB411FB00EBE790 /* Sploding_Star_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sploding_Star_AnimationUITests.swift; sourceTree = "<group>"; };
 		23C910091FB411FB00EBE790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C910161FB48BBB00EBE790 /* CircleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
+		23C910181FB48BEC00EBE790 /* StarLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarLayer.swift; sourceTree = "<group>"; };
+		23C9101B1FB496C700EBE790 /* DrawingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUtil.swift; sourceTree = "<group>"; };
+		23C9101E1FB4971000EBE790 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23C910201FB4987100EBE790 /* ShapeLayersUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLayersUtil.swift; sourceTree = "<group>"; };
+		23C910221FB4994000EBE790 /* ParticlesUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,9 @@
 		23C90FE61FB411FB00EBE790 /* Sploding Star Animation */ = {
 			isa = PBXGroup;
 			children = (
+				23C9101D1FB4970200EBE790 /* Constants */,
+				23C9101A1FB496A300EBE790 /* Util */,
+				23C910151FB48B9000EBE790 /* Layers */,
 				23C90FE71FB411FB00EBE790 /* AppDelegate.swift */,
 				23C90FE91FB411FB00EBE790 /* ViewController.swift */,
 				23C90FEB1FB411FB00EBE790 /* Main.storyboard */,
@@ -123,6 +138,33 @@
 				23C910091FB411FB00EBE790 /* Info.plist */,
 			);
 			path = "Sploding Star AnimationUITests";
+			sourceTree = "<group>";
+		};
+		23C910151FB48B9000EBE790 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				23C910161FB48BBB00EBE790 /* CircleLayer.swift */,
+				23C910181FB48BEC00EBE790 /* StarLayer.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		23C9101A1FB496A300EBE790 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				23C9101B1FB496C700EBE790 /* DrawingUtil.swift */,
+				23C910201FB4987100EBE790 /* ShapeLayersUtil.swift */,
+				23C910221FB4994000EBE790 /* ParticlesUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		23C9101D1FB4970200EBE790 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				23C9101E1FB4971000EBE790 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C90FEA1FB411FB00EBE790 /* ViewController.swift in Sources */,
+				23C910191FB48BEC00EBE790 /* StarLayer.swift in Sources */,
+				23C910171FB48BBB00EBE790 /* CircleLayer.swift in Sources */,
+				23C910231FB4994000EBE790 /* ParticlesUtil.swift in Sources */,
 				23C90FE81FB411FB00EBE790 /* AppDelegate.swift in Sources */,
+				23C910211FB4987100EBE790 /* ShapeLayersUtil.swift in Sources */,
+				23C9101C1FB496C700EBE790 /* DrawingUtil.swift in Sources */,
+				23C9101F1FB4971000EBE790 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
