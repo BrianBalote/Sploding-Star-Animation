@@ -40,6 +40,10 @@ class ParticleLayer: CAShapeLayer {
         self.ex = ex
         self.ey = ey
     }
+    
+    func updateFillColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        fillColor = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1.0).cgColor
+    }
 
     var particlePathStart: UIBezierPath {
         return UIBezierPath(ovalIn: CGRect(x: self.x, y: self.y, width: 5, height: 5))

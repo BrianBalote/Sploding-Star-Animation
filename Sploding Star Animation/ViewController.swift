@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         
         animateCircle()
         animateStar()
-        animateParticles()
+        //animateParticles()
+        animateDynamicParticles()
      
         addLayerAfterDelay(delay: 0.31, layer: self.grayStar)
     }
@@ -71,6 +72,17 @@ class ViewController: UIViewController {
         let starLayer = StarLayer()
         self.view.layer.addSublayer(starLayer)
         starLayer.expand()
+    }
+    
+    func animateDynamicParticles() {
+        
+        let particlesArray = DynamicParticlesGenerator.generateDynamicParticles(count: 32, radius: 59, size: 5)
+        
+        for particle in particlesArray {
+            
+            self.view.layer.addSublayer(particle)
+            particle.move()
+        }
     }
     
     func animateParticles() {
