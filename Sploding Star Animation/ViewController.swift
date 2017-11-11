@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         addLayerAfterDelay(delay: 0.31, layer: self.grayStar)
     }
     
-    @IBAction func userLayerDelay(_ sender: Any) {
+    @IBAction func useLayerDelay(_ sender: Any) {
 
         hideGrayStar()
         

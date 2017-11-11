@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,21 +12,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sploding_Star_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avg-ZS-WR7">
-                                <rect key="frame" x="119" y="32" width="137" height="30"/>
+                                <rect key="frame" x="123" y="32" width="354" height="30"/>
                                 <state key="normal" title="Use Core Animation"/>
                                 <connections>
                                     <action selector="useCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Zk-Pk-hLG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-w2-Npk">
-                                <rect key="frame" x="132" y="580" width="111" height="30"/>
+                                <rect key="frame" x="136" y="513" width="328" height="30"/>
                                 <state key="normal" title="Use Layer Delay"/>
                                 <connections>
-                                    <action selector="userLayerDelay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOc-rE-x7g"/>
+                                    <action selector="useLayerDelay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOc-rE-x7g"/>
                                 </connections>
                             </button>
                         </subviews>
