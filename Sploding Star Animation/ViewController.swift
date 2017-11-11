@@ -11,20 +11,37 @@ import UIKit
 class ViewController: UIViewController {
     
     var myShapeLayers = NSMutableArray()
+    let grayStar = ShaperLayersUtil.createStarShapeLayer(color: UIColor(red: 169.0/255, green: 184.0/255, blue: 193.0/255, alpha: 1.0).cgColor, size: CGFloat(26.0))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareLayers()
+        showGrayStar()
+    }
+    
+    func showGrayStar() {
+        self.view.layer.addSublayer(grayStar)
+    }
+    
+    func hideGrayStar() {
+        grayStar.removeFromSuperlayer()
     }
     
     @IBAction func useCoreAnimation(_ sender: Any) {
+        
+        hideGrayStar()
+        
         animateCircle()
         animateStar()
         animateParticles()
+     
+        addLayerAfterDelay(delay: 0.31, layer: self.grayStar)
     }
     
     @IBAction func userLayerDelay(_ sender: Any) {
 
+        hideGrayStar()
+        
         let count = myShapeLayers.count
         var delay: Double = 0.0
         for i in 0 ... count - 1 {
@@ -37,8 +54,11 @@ class ViewController: UIViewController {
             } else {
                 addLayerAfterDelay(delay: delay, layer: myShapeLayers[i] as! CAShapeLayer)
             }
+            
+            if(i == count - 1) {
+                addLayerAfterDelay(delay: delay, layer: self.grayStar)
+            }
         }
-
     }
     
     func animateCircle() {
@@ -262,8 +282,8 @@ class ViewController: UIViewController {
         let starLayer16 = ShaperLayersUtil.createStarShapeLayer(color: Constants.starColor.cgColor, size: CGFloat(26.0))
         myShapeLayers.add(starLayer16)
         
-        let starLayer0 = ShaperLayersUtil.createStarShapeLayer(color: UIColor.black.cgColor, size: CGFloat(26.0))
-        myShapeLayers.add(starLayer0)
+        let starLayer17 = ShaperLayersUtil.createStarShapeLayer(color: UIColor.black.cgColor, size: CGFloat(26.0))
+        myShapeLayers.add(starLayer17)
     }
     
     func updateLayerAfterDelay(delay: Double, layerToShow: CAShapeLayer, layerToHide: CAShapeLayer) {
