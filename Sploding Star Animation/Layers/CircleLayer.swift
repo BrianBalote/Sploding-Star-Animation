@@ -28,7 +28,7 @@ class CircleLayer: CAShapeLayer {
     }
     
     var ovalPathLarge: UIBezierPath {
-        let size = CGFloat(120.0)
+        let size = CGFloat(150.0)
         return UIBezierPath(ovalIn: CGRect(x: center.x - CGFloat(size/2.0), y: center.y - CGFloat(size/2.0), width: size, height: size))
     }
     
