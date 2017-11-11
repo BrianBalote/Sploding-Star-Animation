@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     
     func animateDynamicParticles() {
         
-        let particlesArray = DynamicParticlesGenerator.generateDynamicParticles(count: 32, radius: 59, size: 5)
+        let particlesArray = DynamicParticlesGenerator.generateDynamicParticles(count: 24, radius: 45, minSize: 5, maxSize: 10)
         
         for particle in particlesArray {
             
